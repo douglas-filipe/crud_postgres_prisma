@@ -60,7 +60,16 @@ export const deleteUserService = (id: string) => {
 
 export const userDetailsService = async (id: string) => {
   try {
-    return await findById(id);
+    const user = await findById(id);
+    if (!user) {
+      /**
+       * Se o usuário não existir
+       * eu crio um erro com alguma
+       * mensagem que faça sentido
+       */
+      throw new Error("User not found");
+    }
+    return user;
   } catch (e) {
     throw new Error((e as Error).message);
   }

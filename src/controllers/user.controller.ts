@@ -48,14 +48,6 @@ export const deleteUserController = async (req: Request, res: Response) => {
 export const userDetailsController = async (req: Request, res: Response) => {
   try {
     const user = await userDetailsService(req.params.id);
-    if (!user) {
-      /**
-       * Se o usuário não existir
-       * eu crio um erro com alguma
-       * mensagem que faça sentido
-       */
-      throw new Error("User not found");
-    }
     res.status(200).json(user);
   } catch (e) {
     res.status(404).json({ message: (e as Error).message });
