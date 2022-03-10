@@ -52,7 +52,7 @@ $ yarn
 $ npx prisma migrate dev
 
 # Execute a aplicação em modo de desenvolvimento
-$ yarn start
+$ yarn dev
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
