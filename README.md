@@ -30,8 +30,8 @@
 - [x] Criação de usuários
 - [x] Listagem de usuários
 - [x] Informações do usuário pelo ID
-- [x] Excluir usuário
-- [x] Atualização de usuário
+- [x] Exclusão de usuários
+- [x] Atualização de usuários
 
 #
 
@@ -50,6 +50,10 @@ $ yarn
 
 # Execute a aplicação em modo de desenvolvimento
 $ yarn start
+
+# Comando para rodar as migrações
+
+$ npx prisma migrate dev
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
