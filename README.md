@@ -48,11 +48,11 @@ $ cd crud_postgres_prisma
 # Instale as dependências
 $ yarn
 
-# Execute a aplicação em modo de desenvolvimento
-$ yarn start
-
 # Comando para rodar as migrações
 $ npx prisma migrate dev
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
